@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ data.college_en }} - Digital Notice Board</title>
+    <style>
+        body { background-color: #000; color: #fff; font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+        .header { text-align: center; color: #00ffff; border-bottom: 2px solid #00ffff; padding-bottom: 10px; }
+        .notice-card { background: #111; border: 1px solid #00ff66; padding: 15px; margin: 15px 0; border-radius: 8px; }
+        .notice-title { color: #ffff00; margin-top: 0; }
+        .ticker { background: #d32f2f; color: #fff; padding: 10px; font-size: 1.1em; font-weight: bold; position: fixed; bottom: 0; left: 0; width: 100%; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>{{ data.college_en }}</h1>
+        <h3>{{ data.headline_en }}</h3>
+    </div>
+    
+    <div id="notices-container">
+        {% for notice in data.notices %}
+        <div class="notice-card">
+            <h2 class="notice-title">{{ notice.title }}</h2>
+            <p><strong>ቀን:</strong> {{ notice.date }}</p>
+            <p>{{ notice.body }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="ticker">{{ data.bottom_ticker_news }}</div>
+</body>
+</html>
