@@ -1,0 +1,487 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="admin-page">
+
+    <div class="form-header">
+
+        <div>
+
+            <h1>
+                Notice Board Settings
+            </h1>
+
+            <p>
+                Edit Header / Footer / Background / Logos
+            </p>
+
+        </div>
+
+
+        <a
+            href="{{ url_for('dashboard') }}"
+            class="secondary-button"
+        >
+            ← Dashboard
+        </a>
+
+    </div>
+
+
+    <form
+        method="POST"
+        enctype="multipart/form-data"
+        class="settings-form"
+    >
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <div class="form-section">
+
+            <h2>
+                🏫 Header Information
+            </h2>
+
+
+            <label>
+                English College Name
+            </label>
+
+            <input
+                type="text"
+                name="college_name_en"
+                value="{{ settings.college_name_en }}"
+            >
+
+
+            <label class="amharic">
+                የኮሌጅ ስም
+            </label>
+
+            <input
+                type="text"
+                name="college_name_am"
+                class="amharic"
+                value="{{ settings.college_name_am }}"
+            >
+
+
+            <label>
+                Header Small Text
+            </label>
+
+            <input
+                type="text"
+                name="header_text"
+                value="{{ settings.header_text }}"
+            >
+
+        </div>
+
+
+        <!-- =================================================
+             LOGO 1
+        ================================================== -->
+
+        <div class="form-section">
+
+            <h2>
+                🖼 Logo 1 — Left
+            </h2>
+
+
+            {% if settings.logo1 %}
+
+                <div class="image-preview">
+
+                    <img
+                        src="{{ url_for(
+                            'logo_media',
+                            filename=settings.logo1
+                        ) }}"
+                        alt="Logo 1"
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    formaction="{{ url_for(
+                        'remove_media',
+                        media_type='logo1'
+                    ) }}"
+                    formmethod="POST"
+                    class="delete-button"
+                >
+                    Remove Logo 1
+                </button>
+
+            {% endif %}
+
+
+            <label>
+                Upload Logo 1
+            </label>
+
+            <input
+                type="file"
+                name="logo1"
+                accept="image/*"
+            >
+
+        </div>
+
+
+        <!-- =================================================
+             LOGO 2
+        ================================================== -->
+
+        <div class="form-section">
+
+            <h2>
+                🖼 Logo 2 — Right
+            </h2>
+
+
+            {% if settings.logo2 %}
+
+                <div class="image-preview">
+
+                    <img
+                        src="{{ url_for(
+                            'logo_media',
+                            filename=settings.logo2
+                        ) }}"
+                        alt="Logo 2"
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    formaction="{{ url_for(
+                        'remove_media',
+                        media_type='logo2'
+                    ) }}"
+                    formmethod="POST"
+                    class="delete-button"
+                >
+                    Remove Logo 2
+                </button>
+
+            {% endif %}
+
+
+            <label>
+                Upload Logo 2
+            </label>
+
+            <input
+                type="file"
+                name="logo2"
+                accept="image/*"
+            >
+
+        </div>
+
+
+        <!-- =================================================
+             BACKGROUND
+        ================================================== -->
+
+        <div class="form-section">
+
+            <h2>
+                🌄 Notice Board Background
+            </h2>
+
+
+            {% if settings.background %}
+
+                <div class="background-preview">
+
+                    <img
+                        src="{{ url_for(
+                            'background_media',
+                            filename=settings.background
+                        ) }}"
+                        alt="Background"
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    formaction="{{ url_for(
+                        'remove_media',
+                        media_type='background'
+                    ) }}"
+                    formmethod="POST"
+                    class="delete-button"
+                >
+                    Remove Background
+                </button>
+
+            {% endif %}
+
+
+            <label>
+                Upload New Background Image
+            </label>
+
+            <input
+                type="file"
+                name="background"
+                accept="image/*"
+            >
+
+            <p class="help-text">
+
+                Recommended:
+                1920 × 1080 or higher.
+
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             FOOTER
+        ================================================== -->
+
+        <div class="form-section">
+
+            <h2>
+                📝 Footer / Motto
+            </h2>
+
+
+            <label>
+                Motto
+            </label>
+
+            <input
+                type="text"
+                name="motto"
+                value="{{ settings.motto }}"
+            >
+
+
+            <label>
+                Address
+            </label>
+
+            <input
+                type="text"
+                name="address"
+                value="{{ settings.address }}"
+            >
+
+
+            <label>
+                P.O. Box
+            </label>
+
+            <input
+                type="text"
+                name="pobox"
+                value="{{ settings.pobox }}"
+            >
+
+
+            <label>
+                Telephone
+            </label>
+
+            <input
+                type="text"
+                name="phone"
+                value="{{ settings.phone }}"
+            >
+
+
+            <label>
+                Email
+            </label>
+
+            <input
+                type="email"
+                name="email"
+                value="{{ settings.email }}"
+            >
+
+
+            <label>
+                Footer Text
+            </label>
+
+            <textarea
+                name="footer_text"
+                rows="3"
+            >{{ settings.footer_text }}</textarea>
+
+        </div>
+
+
+        <!-- =================================================
+             LANGUAGE
+        ================================================== -->
+
+        <div class="form-section">
+
+            <h2>
+                🌐 Language
+            </h2>
+
+
+            <label>
+                Display Language
+            </label>
+
+            <select name="display_language">
+
+                <option
+                    value="both"
+                    {% if settings.display_language == 'both' %}
+                        selected
+                    {% endif %}
+                >
+                    English + አማርኛ
+                </option>
+
+                <option
+                    value="english"
+                    {% if settings.display_language == 'english' %}
+                        selected
+                    {% endif %}
+                >
+                    English Only
+                </option>
+
+                <option
+                    value="amharic"
+                    {% if settings.display_language == 'amharic' %}
+                        selected
+                    {% endif %}
+                >
+                    አማርኛ Only
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- =================================================
+             SLIDESHOW
+        ================================================== -->
+
+        <div class="form-section">
+
+            <h2>
+                📺 TV / Slideshow
+            </h2>
+
+
+            <label>
+                Seconds per Notice
+            </label>
+
+            <input
+                type="number"
+                name="slideshow_seconds"
+                min="2"
+                max="300"
+                value="{{ settings.slideshow_seconds }}"
+            >
+
+        </div>
+
+
+        <!-- =================================================
+             SAVE
+        ================================================== -->
+
+        <div class="form-actions">
+
+            <button
+                type="submit"
+                class="primary-button large-button"
+            >
+                💾 Save All Settings
+            </button>
+
+        </div>
+
+    </form>
+
+
+    <!-- =====================================================
+         PASSWORD
+    ====================================================== -->
+
+    <div class="form-section password-section">
+
+        <h2>
+            🔐 Change Administrator Password
+        </h2>
+
+
+        <form
+            method="POST"
+            action="{{ url_for('change_password') }}"
+        >
+
+            <label>
+                Current Password
+            </label>
+
+            <input
+                type="password"
+                name="current_password"
+                required
+            >
+
+
+            <label>
+                New Password
+            </label>
+
+            <input
+                type="password"
+                name="new_password"
+                required
+            >
+
+
+            <label>
+                Confirm New Password
+            </label>
+
+            <input
+                type="password"
+                name="confirm_password"
+                required
+            >
+
+
+            <button
+                type="submit"
+                class="primary-button"
+            >
+                Change Password
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+{% endblock %}
