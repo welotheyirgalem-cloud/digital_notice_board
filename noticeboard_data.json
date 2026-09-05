@@ -1,0 +1,263 @@
+{
+  "admin_password": "admin123",
+  "display_mode": "REMOTE DISPLAY (IP-TV)",
+  "local_ip": "192.168.1.100:8080",
+  "remote_ip": "10.240.0.15:9000",
+  "timezone": "EAT (UTC+3)",
+  "college_en": "YIRGALEM POLYTECHNIC COLLEGE",
+  "college_am": "ይርጋለም ፖሊ ቴክኒክ ኮሌጅ",
+  "college_sid": "IRGALAME POOLITEKNIKKE KOLLEEJ",
+  "motto": "SKILLS AND INNOVATION FOR BETTER GENERATION!",
+  "headline_en": "DIGITAL NOTICE BOARD",
+  "headline_am": "ዲጂታል የማስታወቂያ ሰሌዳ",
+  "left_logo": "C:\\Users\\wello\\Documents\\digital_notice_board\\logos\\left_logo.png",
+  "right_logo": "C:\\Users\\wello\\Documents\\digital_notice_board\\logos\\right_logo.png",
+  "font_am_family": "Nyala",
+  "font_am_size": "12",
+  "font_en_family": "Segoe UI",
+  "font_en_size": "11",
+  "bottom_ticker_news": "🔴 ሰበር ዜና / URGENT NEWS: Welcome to Yirgalem Polytechnic College Digital Notice Board! [DOC/PDF/VIDEO/IMAGE Support Active].ይህ የይርጋለም ድጂታል የማስታዎቂያ ሰሌዳ ነዉ።",
+  "email": "yirgalempoly@gmail.com",
+  "po_box": "P.O. Box: 188",
+  "phone": "+251 462251413",
+  "address": "yirgalem,sidama,ethiopia",
+  "college_situation": {
+    "status_am": "ወቅታዊ ሁኔታ: የትምህርትና ስልጠና ሂደት በሰላም እየተካሄደ ይገኛል። peace",
+    "status_en": "Academic activities & technical training in progress.",
+    "trainees": "3,500+",
+    "staff": "145",
+    "projects": "12 TechPrototypes/12 የቴክኖሎጂ  ፕሮቶታይፕ"
+  },
+  "prepared_profile": {
+    "name": "INSTRUCOR- TEMESGEN SAMUA ASSEFA(Msc)",
+    "role": "System Admin & Presenter",
+    "photo": "C:\\Users\\wello\\Documents\\digital_notice_board\\profiles\\presenter.jpg"
+  },
+  "exhibits": [
+    {
+      "title": "Solar Bird Deterrent System",
+      "type": "VIDEO",
+      "file": "C:\\Users\\wello\\Videos\\2026-07-18 02-59-37.mp4"
+    },
+    {
+      "title": "WAN Digital Noticeboard System",
+      "type": "DOCUMENT",
+      "file": "manual.docx"
+    },
+    {
+      "title": "Robotic Circuit Schematics",
+      "type": "IMAGE",
+      "file": "circuit.png"
+    },
+    {
+      "title": "Exhibition Audio Guide",
+      "type": "AUDIO",
+      "file": "guide.mp3"
+    },
+    {
+      "title": "2026-07-18 02-59-37",
+      "type": "VIDEO",
+      "file": "C:/Users/wello/Videos/2026-07-18 02-59-37.mp4"
+    },
+    {
+      "title": "RIGHT_LOGO",
+      "type": "IMAGE",
+      "file": "C:\\Users\\wello\\Documents\\digital_notice_board\\images\\right_logo.png"
+    },
+    {
+      "title": "DOWNLOAD - 2026-08-23T131844.402",
+      "type": "VIDEO",
+      "file": "C:\\Users\\wello\\Downloads\\Download - 2026-08-23T131844.402.mp4"
+    },
+    {
+      "title": "ChatGPT Image Aug 31, 2026, 02_04_13 AM",
+      "type": "IMAGE",
+      "file": "C:\\Users\\wello\\Downloads\\ChatGPT Image Aug 31, 2026, 02_04_13 AM.png"
+    }
+  ],
+  "notices": [
+    {
+      "title": "Student Registration /የሰልጣኝ ምዝገባ",
+      "date": "05/01/2019 E.C",
+      "media_type": "Text",
+      "display_time": "5",
+      "file_path": "",
+      "body": "Students are informed to complete registration according to the college schedule.@ congratulation!!!!2018E/C\nwelllll;;l;l;l;l;l';"
+    },
+    {
+      "title": "Innovation Exhibition/fetera",
+      "date": "Upcoming",
+      "display_time": "10",
+      "media_type": "DOC",
+      "file_path": "",
+      "body": "መግቢያ፦ ይህ መጠይቅ በግብርና፣ በኃይል ማመንጫ ጣቢያዎች፣ በሕንፃዎች እና በተቋማት ላይ በአእዋፋት ና በእንስሳት የሚደርሰውን ጉዳት ለመከላከል የሚያስችል በፀሐይ ኃይል የሚሠራ ቴክኖሎጂ ለማልማት እና የገበያ ፍላጎትን ለማወቅ የተዘጋጀ ነው።\n\nክፍል 1፡ አጠቃላይ መረጃ እና የዘርፍ ዓይነት (General Info & Sector)\n1. የድርጅቱ/ተቋሙ ዘርፍ የትኛው ነው? (Which sector best describes your entity?)\n[ ] ግብርና (Agricultural / Farming)\n[ ] የኃይል ማመንጫ / ማደያ ጣቢያ (Power Station / Energy Plant)\n[ ] የንግድ ወይም የመኖሪያ ሕንፃ (Commercial / Residential Building)\n[ ] የመንግሥት / የግል ተቋም (Institution / Public Entity)\n[ ] ሌላ (ይጠቀስ)፦ _____________________________________\n2. የቦታው/የግቢው ስፋት ምን ያህል ነው? (What is the approximate operational area?)\n[ ] ከ 500 ካሬ ሜትር በታች (Under 500 sq.m)\n[ ] ከ 500 – 2,000 ካሬ ሜትር (500 – 2,000 sq.m)\n[ ] ከ 2,000 – 10,000 ካሬ ሜትር (2,000 – 10,000 sq.m)\n[ ] ከ 1 ሄክታር በላይ (More than 1 Hectare)"
+    },
+    {
+      "title": "Important Announcement",
+      "date": "Notice",
+      "type": "image",
+      "body": "Please check the digital notice board regularly for new college information.",
+      "image": "C:\\Users\\wello\\Documents\\digital_notice_board\\images\\Screenshot 2026-09-01 115622.png",
+      "video": "",
+      "duration": 15,
+      "active": true
+    },
+    {
+      "title": "the weeck of graduation2018 E/C",
+      "date": "02/09/2026",
+      "body": "CONGRATULATION !2018 E/C",
+      "type": "text",
+      "video": "",
+      "thumbnail": "",
+      "image": "",
+      "duration": 10,
+      "active": true
+    },
+    {
+      "title": "graduation period",
+      "date": "23/122018E/C",
+      "body": "solar ethiopia",
+      "type": "text",
+      "video": "",
+      "image": "",
+      "thumbnail": "",
+      "duration": 10,
+      "active": true
+    },
+    {
+      "title": "repllant",
+      "date": "crop protection",
+      "body": "crop protection",
+      "type": "text",
+      "video": "",
+      "image": "",
+      "thumbnail": "",
+      "duration": 15,
+      "active": true
+    },
+    {
+      "title": "tuesday",
+      "date": "01/09/2026",
+      "type": "text",
+      "body": "the day",
+      "image": "",
+      "video": "",
+      "duration": 5,
+      "active": true
+    },
+    {
+      "title": "solar",
+      "date": "01/09/2026",
+      "type": "video",
+      "body": "",
+      "image": "",
+      "video": "C:\\Users\\wello\\Documents\\digital_notice_board\\videos\\solar_bird_protection_amharic_demo.mp4",
+      "duration": 45,
+      "active": true
+    },
+    {
+      "title": "video",
+      "date": "01/09/2026",
+      "type": "video",
+      "body": "",
+      "image": "",
+      "video": "C:\\Users\\wello\\Documents\\digital_notice_board\\videos\\2026-07-18 02-59-37.mp4",
+      "duration": 60,
+      "active": true
+    },
+    {
+      "title": "Demo Video",
+      "date": "01/09/2026",
+      "type": "video",
+      "body": "",
+      "image": "",
+      "video": "C:\\Users\\wello\\Documents\\digital_notice_board\\videos\\2026-07-18 06-49-43.mp4",
+      "duration": 30,
+      "active": true
+    },
+    {
+      "title": "Arsenal Team Photo",
+      "date": "01/09/2026",
+      "type": "image",
+      "body": "",
+      "image": "C:\\Users\\wello\\Documents\\digital_notice_board\\images\\tem arsenal.jpg",
+      "video": "",
+      "duration": 10,
+      "active": true
+    },
+    {
+      "title": "pm4",
+      "date": "01/09/2026",
+      "type": "video",
+      "body": "",
+      "image": "",
+      "video": "C:\\Users\\wello\\Documents\\digital_notice_board\\videos\\Download - 2026-08-23T171424.964.mp4",
+      "duration": 30,
+      "active": true
+    },
+    {
+      "title": "Notice Poster",
+      "date": "01/09/2026",
+      "media_type": "IMAGE",
+      "display_time": "10",
+      "file_path": "C:\\Users\\wello\\Downloads\\Gemini_Generated_Image_.jpg",
+      "body": ""
+    },
+    {
+      "title": "l;josows;",
+      "date": "0`",
+      "display_time": "20",
+      "media_type": "Video",
+      "file_path": "C:/Users/wello/Videos/2026-07-18 02-59-37.mp4",
+      "body": ""
+    },
+    {
+      "title": "welo",
+      "date": "04/09/2026",
+      "media_type": "TEXT",
+      "display_time": "3",
+      "file_path": "",
+      "body": "arsenal"
+    }
+  ],
+  "daily_event": {
+    "title": "College Innovation Day",
+    "time": "09:00 AM - 05:00 PM",
+    "location": "Main Auditorium",
+    "prepared_by_name": "In.TEMESGEN SAMUA ASSEFA",
+    "prepared_by_photo": "C:\\Users\\wello\\Documents\\digital_notice_board\\logos\\presenter.png",
+    "title_en": "",
+    "title_am": "management on meating"
+  },
+  "college_situations": [
+    {
+      "title": "CAMPUS ACADEMIC STATUS",
+      "status": "NORMAL OPERATIONS",
+      "body": "Regular training and practical workshop sessions are ongoing across all departments."
+    }
+  ],
+  "ticker_news": [
+    "🚨 WELCOME TO YIRGALEM POLYTECHNIC COLLEGE DIGITAL NOTICE BOARD!",
+    "📢 ADMISSION OPEN FOR NEW TVET TRAINEES FOR THE UPCOMING SEMESTER.",
+    "🔬 VISIT THE TECHNOLOGY EXHIBITION IN THE MAIN HALL DAILY FROM 9:00 AM - 5:00 PM."
+  ],
+  "event_media_mode": "SIMULTANEOUS",
+  "network_port": 8080,
+  "default_duration": 15,
+  "auto_sync": true,
+  "sync_interval": 300,
+  "video_autoplay": true,
+  "video_loop": true,
+  "image_fit": "cover",
+  "user_mode": "admin",
+  "allow_public_view": true,
+  "college_local": "IRGALAME POOLITEKINIKE KOLLEEJE",
+  "motto_position": "BOTTOM",
+  "bg_image": "C:\\Users\\wello\\Documents\\digital_notice_board\\images\\Emblem_of_Sidama_Region.png",
+  "bg_darkness": 100,
+  "scroll_speed": 200,
+  "font_en": "Segoe UI",
+  "font_am": "Nyala",
+  "font_size_header": 18,
+  "font_size_body": 12
+}

@@ -1,0 +1,12 @@
+[BUG]: no found input "app.py"
+
+## Command Line
+C:\Users\wello\AppData\Local\Programs\Python\Python313\Scripts\pyarmor gen app.py
+
+## Environments
+Python 3.13.15
+Pyarmor 9.2.7 (trial), 000000, non-profits
+Platform windows.x86_64
+Native windows.amd64
+Home C:\Users\wello\.pyarmor
+
