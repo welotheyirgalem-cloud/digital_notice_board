@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ data.college_en }} - Digital Notice Board{% endblock %}</title>
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 15px; }
+        .header { background-color: #1e293b; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-radius: 8px; margin-bottom: 15px; border: 1px solid #334155; }
+        .header-content { text-align: center; flex-grow: 1; }
+        .header h1 { font-size: 1.2rem; margin: 5px 0; color: #f8fafc; }
+        .header h2 { font-size: 1rem; margin: 5px 0; color: #38bdf8; }
+        .header p.local { font-size: 0.85rem; color: #f59e0b; margin: 3px 0; }
+        .header p.motto { font-size: 0.85rem; color: #f59e0b; font-style: italic; margin: 5px 0; }
+        .logo-img { height: 75px; width: auto; max-width: 90px; object-fit: contain; }
+        .marquee { background-color: #0284c7; padding: 10px; text-align: center; font-weight: bold; border-radius: 6px; margin-bottom: 15px; }
+        .card { background-color: #1e293b; border: 1px solid #334155; border-radius: 8px; margin-bottom: 15px; overflow: hidden; }
+        .card-header { background-color: #334155; padding: 10px 15px; display: flex; justify-content: space-between; align-items: center; }
+        .card-body { padding: 15px; font-size: 0.95rem; color: #e2e8f0; line-height: 1.4; }
+        .card-img { max-width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px; display: block; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        {% if data.left_logo %}
+            <img src="/media/{{ data.left_logo_rel }}" class="logo-img" alt="Left Logo">
+        {% else %}
+            <img src="/static/logo.png" class="logo-img" alt="Logo" onerror="this.style.display='none'">
+        {% endif %}
+
+        <div class="header-content">
+            {% if data.motto_position == 'TOP' %}<p class="motto">“{{ data.motto }}”</p>{% endif %}
+            <h1>{{ data.college_en }}</h1>
+            <h2>{{ data.college_am }}</h2>
+            <p class="local">{{ data.college_local }}</p>
+            {% if data.motto_position != 'TOP' %}<p class="motto">“{{ data.motto }}”</p>{% endif %}
+        </div>
+
+        {% if data.right_logo %}
+            <img src="/media/{{ data.right_logo_rel }}" class="logo-img" alt="Right Logo">
+        {% endif %}
+    </div>
+
+    <div class="marquee">
+        📢 {{ data.headline_en }} | {{ data.headline_am }}
+    </div>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
